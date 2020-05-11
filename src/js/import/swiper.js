@@ -23,3 +23,28 @@ var swiper = new Swiper('.swiper-payment', {
     }
   }
 });
+
+
+
+//home team
+var swiper = new Swiper('.swiper-team', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  pagination: {
+    el: '.swiper-pagination-team',
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 5,
+    },
+    767: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+    }
+  }
+});
