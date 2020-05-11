@@ -1,1 +1,37 @@
 .talants
+  padding: 125px 0 40px
+  &__block
+    width: 100%
+    border-radius: 7px
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.07)
+    background-color: #f9f9f9
+    overflow: hidden
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+    +r(767)
+      margin-bottom: 10px
+    &__img
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.07)
+      background-color: #e94e1b
+      width: 115px
+      height: 115px
+      +center
+      +r(767)
+        width: 67px
+        height: 67px
+      svg
+        fill: #fff
+        font-size: 40px
+        +r(767)
+          font-size: 33px
+    p
+      margin-left: 40px
+      font-size: 27px
+      font-weight: 500
+      line-height: 1.22
+      color: #828282
+      display: block
+      +r(767)
+        font-size: 15px
+        margin-left: 25px

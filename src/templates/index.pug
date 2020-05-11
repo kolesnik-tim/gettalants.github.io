@@ -5,8 +5,10 @@ extends layouts/_layout
 block content
   // partial example
   include ./home/intro
-  //- include ./home/intro
   include ./home/talants
+  .video
+    iframe(src="https://www.youtube.com/embed/7Zl8KF-CFY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  include ./home/payment-option
   .payment-img
     img(src="img/payment-img.png", alt="")
   include ./home/payment

@@ -1,0 +1,53 @@
+.payment-option
+  padding: 150px 0 110px
+  +r(767)
+    padding: 40px 0 10px
+  .title
+    p
+      color: #000
+      +r(767)
+        max-width: 196px
+        width: 100%
+        +relative-x
+  &__block
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.07)
+    background-color: #ffffff
+    max-width: 350px
+    width: 100%
+    +relative-x
+    padding: 35px 45px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 60px
+    margin-bottom: 40px
+    height: calc(100% - 40px)
+    +r(767)
+      padding: 27px 20px
+      border-radius: 40px
+      height: auto
+      margin-bottom: 30px
+      max-width: 265px
+    &__img
+      width: 85px
+      height: 85px
+      +center
+      background-color: #e94e1b
+      border-radius: 50%
+      margin-bottom: 12px
+      +r(767)
+        width: 65px
+        height: 65px
+      svg
+        font-size: 34px
+        fill: #fff
+        +r(767)
+          font-size: 25px
+    p
+      font-size: 24px
+      font-weight: 500
+      line-height: 1.21
+      text-align: center
+      color: #000000
+      +r(767)
+        font-size: 18px
