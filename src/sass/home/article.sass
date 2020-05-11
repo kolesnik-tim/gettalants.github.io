@@ -1,0 +1,40 @@
+.article
+  padding: 105px 0
+  background-image: linear-gradient(to left, #f2f2f2, #ffffff)
+  overflow: hidden
+  +r(767)
+    background: #f2f2f2
+    padding: 0 0 30px
+  &__img
+    width: 100%
+    +r(992)
+      width: calc(100% + 30px)
+      margin-left: -15px
+    img
+      width: 100%
+  &__text
+    margin-left: 40px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +r(992)
+      margin-left: 0
+      margin-top: 25px
+    p, li, b
+      font-size: 14px
+      font-weight: normal
+      line-height: 1.29
+      color: #000000
+      margin-bottom: 15px
+      span
+        display: block
+    b
+      font-weight: 500
+    li
+      margin-bottom: 0
+      padding-left: 5px
+    ul
+      list-style: disc
+      padding-left: 20px
+      margin-bottom: 15px

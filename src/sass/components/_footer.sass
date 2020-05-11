@@ -1,0 +1,40 @@
+.footer
+  ul
+    padding: 40px 0
+    border-top: 1px solid #707070
+    display: flex
+    +r(767)
+      flex-wrap: wrap
+      justify-content: space-around
+      padding: 15px 0 0
+  li
+    margin-right: 40px
+    +r(767)
+      margin-right: 0
+      margin-bottom: 20px
+    &:first-child
+      +r(767)
+        width: 100%
+  p, a
+    font-size: 14px
+    font-weight: normal
+    line-height: 1.29
+    color: #000000
+    +r(374)
+      font-size: 12px
+  p
+    position: relative
+    +r(767)
+      text-align: center
+    &::before
+      content: '|'
+      font-size: 14px
+      font-weight: normal
+      line-height: 1.29
+      color: #000000
+      position: absolute
+      right: -23px
+      top: 0
+      +r(767)
+        display: none
+
