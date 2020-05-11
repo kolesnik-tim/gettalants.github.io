@@ -1,15 +1,11 @@
-// import '../lib/maskedinput.js';
-// import modal from 'jquery-modal';
-// import selectric from 'selectric';
 
-//select
-// $('select').selectric();
-
-
-// //pop-up
-// $('[rel="modal:open"]').on('click', function(event) {
-//   $(this).modal({
-//     fadeDuration: 200
-//   });
-//   return false;
-// });
+$('.mobile-open-slide').on('click', function(event) {
+  event.preventDefault();
+  $(this).toggleClass('active');
+  $('.mobile-slide').slideToggle();
+  if($(this).hasClass('active')) {
+    $(this).text('Less categories');
+  } else{
+    $(this).text('More categories');
+  }
+});
