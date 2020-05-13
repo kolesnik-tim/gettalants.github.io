@@ -15,10 +15,7 @@ $('.mobile-open-slide').on('click', function(event) {
 //video
 $('.video a').on('click', function(event) {
   event.preventDefault();
-  $(this).toggleClass('active');
-  if($(this).hasClass('active')) {
-    $(this).parents('.video').find('video').get(0).play();
-  } else{
-    $(this).parents('.video').find('video').get(0).pause();
-  }
+  $(this).fadeToggle();
+  $(this).parents('.video').find('video').get(0).play();
+  $(this).parents('.video').find('video').attr('controls', 'controls');
 });
