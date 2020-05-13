@@ -28,12 +28,17 @@ gulp.task('copy:lib', () => gulp
   .pipe(gulp.dest(config.dest.lib))
 );
 
+gulp.task('copy:vid', () => gulp
+  .src(config.src.img + '/video.mp4')
+  .pipe(gulp.dest(config.dest.img))
+);
+
 gulp.task('copy:rootfiles', () => gulp
   .src(config.src.root + '/*.*')
   .pipe(gulp.dest(config.dest.root))
 );
 
-const build = gulp => gulp.series('copy:img', 'copy:fonts');
+const build = gulp => gulp.series('copy:img', 'copy:fonts', 'copy:vid');
 const watch = gulp => () => gulp.watch(config.src.img + '/*', gulp.parallel('copy:img', 'copy:fonts'));
 
 module.exports.build = build;

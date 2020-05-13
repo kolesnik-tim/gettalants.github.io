@@ -7,7 +7,9 @@ block content
   include ./home/intro
   include ./home/talants
   .video
-    iframe(src="https://www.youtube.com/embed/XNzLPLOAx9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    video(src="img/video.mp4")
+    a(href="#")
+      +icon('play')
   include ./home/payment-option
   .payment-img
     img(src="img/payment-img.png", alt="")
